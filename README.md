@@ -1,3 +1,6 @@
+## This repository is actively being refined, with additional content and enhancements planned over the coming weeks.
+
+
 # PowerBI-Computer-Inventory
 
 Power BI dashboards built on a SQL Server-based Computer Inventory database, demonstrating data modeling, transformation, and visualization for operational analysis.
@@ -31,7 +34,7 @@ It builds on the companion project:
 - GitHub (documentation)  
 
 ---
-## Repository Structure 
+## Planned Repository Structure (To be refined)
 <PRE>
 PowerBI-Computer-Inventory/
 │
@@ -63,9 +66,9 @@ The dataset comes from a locally hosted SQL Server database:
 
 - Database: `ComputerInventory`  
 - Source: SQL Server Express  
-- Connection: DirectQuery
+- Connection: Import
 
-### Tables Used
+### Tables Used (To be refined)
 
 - Computer  
 - Employee  

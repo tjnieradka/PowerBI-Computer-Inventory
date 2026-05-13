@@ -99,7 +99,7 @@ The dataset comes from a locally hosted SQL Server database:
 
 ### Key Relationships
 
-- Computer → Computer_Assignment → Employee  
+- Computer → Employee  
 - Computer → Computer_Software → Software  
 
 ### Concepts Demonstrated

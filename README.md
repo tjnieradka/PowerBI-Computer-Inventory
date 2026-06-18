@@ -47,14 +47,16 @@ PowerBI-Computer-Inventory/
 │   └── step-by-step-guide.md
 │
 ├── pbix/
-│   └── ComputerInventoryDashboard.pbix
+│   └── computer-inventory.pbix
 │
 ├── queries/
 │   └── data-extraction.sql
 │
 ├── output/
 │   ├── dashboard-screenshots/
-│   └── sample-insights.md
+│       └── 00-dashboard-overview.png
+│       └── 01a-computer-inventory-overview.png
+│       └── ...(additional screenshots)
 │
 └── data-source/
     └── connection-details.md

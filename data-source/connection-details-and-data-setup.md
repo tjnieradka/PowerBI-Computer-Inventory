@@ -25,6 +25,6 @@ In enterprise environments, **DirectQuery** may be used when:
 
 In Power BI Desktop, select `Import Data from SQL`.
 
-
+![Connection](../output/setup-screenshots/connection-setup.png)
 
 

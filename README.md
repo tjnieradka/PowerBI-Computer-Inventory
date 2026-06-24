@@ -1,9 +1,6 @@
-## This repository is actively being refined, with additional content and enhancements planned over the coming weeks.
-
-
 # PowerBI-Computer-Inventory
 
-Power BI dashboards built on a SQL Server-based Computer Inventory database, demonstrating data modeling, transformation, and visualization for operational analysis.
+Power BI dashboards built from a SQL Server inventory database demonstrating data modeling, data transformation, reporting, and visualization for asset and operational analysis.
 
 ---
 
@@ -44,13 +41,13 @@ PowerBI-Computer-Inventory/
 │   ├── powerbi-fundamentals.md
 │   ├── data-modeling.md
 │   ├── report-design.md
-│   └── step-by-step-guide.md
+│   └── step-by-step-guide.md (TBA)
 │
 ├── pbix/
 │   └── computer-inventory.pbix
 │
 ├── queries/
-│   └── data-extraction.sql
+│   └── data-extraction.sql (TBA)
 │
 ├── output/
 │   ├── dashboard-screenshots/

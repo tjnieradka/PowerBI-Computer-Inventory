@@ -37,6 +37,8 @@ PowerBI-Computer-Inventory/
 │
 ├── README.md
 │
+├── data-source/
+│   └── connection-details-and data-setup.md   
 ├── docs/
 │   ├── powerbi-fundamentals.md
 │   ├── data-modeling.md
@@ -49,14 +51,16 @@ PowerBI-Computer-Inventory/
 ├── queries/
 │   └── data-extraction.sql (TBA)
 │
-├── output/
-│   ├── dashboard-screenshots/
-│       └── 00-dashboard-overview.png
-│       └── 01a-computer-inventory-overview.png
-│       └── ...(additional screenshots)
-│
-└── data-source/
-    └── connection-details.md
+└── output/
+    ├── dashboard-screenshots/
+    │   └── 00-dashboard-overview.png
+    │   └── 01a-computer-inventory-overview.png
+    │   └── ...(additional screenshots)
+    └── setup-screenshots/
+        └── connection-setup.png
+        └── navigator-setup.png
+        └── query-editor.png    
+        └── ...(additional screenshots)    
 </PRE>
 
 ## Data Source
@@ -113,11 +117,11 @@ The dataset comes from a locally hosted SQL Server database:
 
 ### Example Reports
 
-- Computer Inventory Overview  
-- Device Assignment by Employee  
-- Software Usage Analysis  
-- Unassigned or Inactive Devices  
-- Devices by Type, Status, or OS  
+- Computer Inventory Overview
+- Computer Inventory Overview by Office
+- Overview of Employees by Office
+- Software Inventory Overview
+- Employee Device and Software Assignment 
 
 ---
 
@@ -125,12 +129,12 @@ The dataset comes from a locally hosted SQL Server database:
 
 - Identify computers not assigned to any user  
 - Track software installations across devices  
-- Analyze distribution of assets by type or department  
+- Analyze distribution of assets by type or office 
 - Detect outdated or inactive systems  
 
 ---
 
-## Step-by-Step Report Creation
+## Step-by-Step Report Creation (TBA)
 
 See: `docs/step-by-step-guide.md`
 
@@ -166,7 +170,6 @@ Screenshots available in:
 
 - Add DAX measures (e.g., device utilization)  
 - Add time-based analysis  
-- Publish to Power BI Service  
 - Improve dashboard design and UX  
 
 ---

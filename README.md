@@ -71,14 +71,21 @@ The dataset comes from a locally hosted SQL Server database:
 - Source: SQL Server Express  
 - Connection: Import
 
-### Tables Used (To be refined)
+### Tables Used 
 
-- Computer  
-- Employee  
-- Computer_Assignment  
-- Software  
+- Computer
+- CompStatus
+- CompType
 - Computer_Software  
-- CompStatus  
+- Employee  
+- EmpOffice
+- EmpPosition
+- EmpStatus
+- Vendor 
+- Software  
+- SwStatus
+- SwLibcns
+- SwLanguage 
 
 ---
 

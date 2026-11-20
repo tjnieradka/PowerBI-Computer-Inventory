@@ -1,186 +1,62 @@
-# PowerBI-Computer-Inventory
+# Power BI Computer Inventory
 
-Power BI dashboards built from a SQL Server inventory database demonstrating data modeling, data transformation, reporting, and visualization for asset and operational analysis.
+Power BI dashboards built from a SQL Server inventory database to demonstrate data modeling, transformation, reporting, and visualization for IT asset analysis.
 
----
+## 1. Overview
 
-## Overview
+This independent portfolio project uses the database developed in the [SQL Computer Inventory repository](https://github.com/tjnieradka/SQL-Computer-Inventory) to create interactive Power BI reports. It demonstrates how relational inventory data can be transformed into reports covering computers, employees, offices, and software assignments.
 
-This project demonstrates how raw relational data from a SQL Server database can be transformed into meaningful insights using Power BI.
+The main objectives are to connect to SQL Server, prepare and model data, and create interactive reports using filters and slicers.
 
-It builds on the companion project:
+## 2. Technologies and Tools
 
-[SQL-Computer-Inventory](https://github.com/tjnieradka/SQL-Computer-Inventory)
+- Microsoft Power BI Desktop
+- Microsoft SQL Server Express 2022
+- SQL Server Management Studio (SSMS) and T-SQL
+- Windows 11
 
-### Key Goals
+## 3. Documentation and Project Files
 
-- Connect Power BI to a SQL Server database  
-- Transform and model data for reporting  
-- Create interactive dashboards  
-- Demonstrate practical data analysis scenarios  
+### Documentation
 
----
+1. [Connection Details and Data Setup](data-source/connection-details-and-data-setup.md)
+2. [Power BI Fundamentals](docs/powerbi-fundamentals.md)
+3. [Data Modeling](docs/data-modeling.md)
+4. [Report Design](docs/report-design.md)
 
-## Technology Stack
+### Power BI Project
 
-- Power BI Desktop  
-- Microsoft SQL Server Express 2022  
-- SQL Server Management Studio (SSMS)  
-- T-SQL  
-- Windows 11  
-- GitHub (documentation)  
+- [Computer Inventory Power BI Report (.pbix)](pbix/computer-inventory.pbix) — Power BI Desktop project file.
 
----
-## Planned Repository Structure (To be refined)
-<PRE>
-PowerBI-Computer-Inventory/
-│
-├── README.md
-│
-├── data-source/
-│   └── connection-details-and data-setup.md   
-├── docs/
-│   ├── powerbi-fundamentals.md
-│   ├── data-modeling.md
-│   ├── report-design.md
-│   └── step-by-step-guide.md (TBA)
-│
-├── pbix/
-│   └── computer-inventory.pbix
-│
-├── queries/
-│   └── data-extraction.sql (TBA)
-│
-└── output/
-    ├── dashboard-screenshots/
-    │   └── 00-dashboard-overview.png
-    │   └── 01a-computer-inventory-overview.png
-    │   └── ...(additional screenshots)
-    └── setup-screenshots/
-        └── connection-setup.png
-        └── navigator-setup.png
-        └── query-editor.png    
-        └── ...(additional screenshots)    
-</PRE>
+### Screenshots
 
-## Data Source
+- [Dashboard Overview](output/dashboard-screenshots/00-dashboard-overview.png) — Preview of the completed report.
+- [Dashboard Screenshots](output/dashboard-screenshots/) — Report pages and filtered views.
+- [Setup Screenshots](output/setup-screenshots/) — Connection, Navigator, Query Editor, and model views.
 
-The dataset comes from a locally hosted SQL Server database:
+## 4. Data Model and Dashboard Features
 
-- Database: `ComputerInventory`  
-- Source: SQL Server Express  
-- Connection: Import
+The report imports data from the locally hosted SQL Server Express `ComputerInventory` database. Its model includes relationships among computers, employees, software, and associated lookup tables.
 
-### Tables Used 
+The dashboard contains five report areas:
 
-- Computer
-- CompStatus
-- CompType
-- Computer_Software  
-- Employee  
-- EmpOffice
-- EmpPosition
-- EmpStatus
-- Vendor 
-- Software  
-- SwStatus
-- SwLibcns
-- SwLanguage 
+1. Computer inventory overview
+2. Computer inventory by office
+3. Employee overview by office
+4. Software inventory overview
+5. Employee device and software lookup
 
----
+These reports support exploration of asset assignments, office distributions, software installations, and inventory status through interactive filtering.
 
-## Connecting Power BI to SQL Server
+![Power BI Computer Inventory Dashboard](output/dashboard-screenshots/00-dashboard-overview.png)
 
-### Steps
+## 5. Project Scope
 
-1. Open Power BI Desktop  
-2. Click **Get Data → SQL Server**  
-3. Enter:
-   - Server: `localhost`  
-   - Database: `ComputerInventory`  
-4. Choose:
-   - Import 
-5. Select relevant tables or views  
-6. Load data into Power BI  
+This is an educational portfolio project using a fictional IT inventory scenario, not a production asset-management system. The focus is on importing relational data, understanding model relationships, and presenting operational information in Power BI. The database design and supporting SQL scripts are documented separately in the [SQL Computer Inventory repository](https://github.com/tjnieradka/SQL-Computer-Inventory).
 
----
+## 6. References and Learning Resources
 
-## Data Modeling
-
-### Key Relationships
-
-- Computer → Employee  
-- Computer → Computer_Software → Software  
-
-### Concepts Demonstrated
-
-- Fact vs Dimension tables  
-- One-to-many relationships  
-- Star schema (simplified)  
-
----
-
-## Dashboard Features
-
-### Example Reports
-
-- Computer Inventory Overview
-- Computer Inventory Overview by Office
-- Overview of Employees by Office
-- Software Inventory Overview
-- Employee Device and Software Assignment 
-
----
-
-## Sample Insights
-
-- Identify computers not assigned to any user  
-- Track software installations across devices  
-- Analyze distribution of assets by type or office 
-- Detect outdated or inactive systems  
-
----
-
-## Step-by-Step Report Creation (TBA)
-
-See: `docs/step-by-step-guide.md`
-
-### Includes
-
-- Creating visuals  
-- Using slicers and filters  
-- Building charts and tables  
-- Basic DAX measures  
-
----
-
-## Power BI Fundamentals (Quick Reference)
-
-See: `docs/powerbi-fundamentals.md`
-
-### Covers
-
-- Data model concepts  
-- Measures vs calculated columns  
-- Import vs DirectQuery  
-- Visual design best practices  
----
-
-## Output
-
-Screenshots available in:  
-`output/dashboard-screenshots/`
-
----
-
-## Future Enhancements
-
-- Add DAX measures (e.g., device utilization)  
-- Add time-based analysis  
-- Improve dashboard design and UX  
-
----
-
-## About This Project
-
-This project demonstrates practical Power BI skills applied to a realistic IT asset management scenario, building on prior experience with SQL reporting, SAP analytics tools, and data analysis workflows.
+- [Microsoft Learn — Power BI Documentation](https://learn.microsoft.com/en-us/power-bi/)
+- [Microsoft Learn — Power Query Documentation](https://learn.microsoft.com/en-us/power-query/)
+- [Microsoft Learn — Power BI Data Modeling](https://learn.microsoft.com/en-us/power-bi/transform-model/)
+- [SQL Computer Inventory — Companion Repository](https://github.com/tjnieradka/SQL-Computer-Inventory)

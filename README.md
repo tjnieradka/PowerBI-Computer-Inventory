@@ -48,7 +48,13 @@ The dashboard contains five report areas:
 
 These reports support exploration of asset assignments, office distributions, software installations, and inventory status through interactive filtering.
 
+Sample screenshots:
+
 ![Power BI Computer Inventory Dashboard](output/dashboard-screenshots/00-dashboard-overview.png)
+
+![Power BI Computer Inventory Dashboard](output/dashboard-screenshots/01a-computer-inventory-overview.png)
+
+![Power BI Computer Inventory Dashboard](output/dashboard-screenshots/02a-office-overview.png)
 
 ## 5. Project Scope
 
